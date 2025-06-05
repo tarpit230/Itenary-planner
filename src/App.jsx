@@ -2,12 +2,18 @@ import React, { useState } from "react";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 import { FaMapMarkerAlt, FaTrash, FaGripLines, FaBars } from "react-icons/fa";
 
+// Import images
+import indiaGateImg from './assets/indiaGate.jpg';
+import redFortImg from './assets/redFort.jpg';  
+import qutubMinarImg from './assets/qutubMinar.jpg';
+import lotusTempleImg from './assets/lotusTemple.jpg';
+
 const initialLocations = [
   {
     id: "loc-1",
     name: "India Gate",
     location: "Rajpath, New Delhi",
-    image: "/src/assets/indiaGate.jpg",
+    image: indiaGateImg,
     rating: 4.7,
     reviews: 9200,
     description:
@@ -17,7 +23,7 @@ const initialLocations = [
     id: "loc-2",
     name: "Red Fort",
     location: "Netaji Subhash Marg, Chandni Chowk, Delhi",
-    image: "/src/assets/redFort.cms",
+    image: redFortImg,
     rating: 4.6,
     reviews: 10500,
     description:
@@ -27,7 +33,7 @@ const initialLocations = [
     id: "loc-3",
     name: "Qutub Minar",
     location: "Mehrauli, New Delhi",
-    image: "/src/assets/qutubMinar.jpg",
+    image: qutubMinarImg,
     rating: 4.5,
     reviews: 8500,
     description:
@@ -37,7 +43,7 @@ const initialLocations = [
     id: "loc-4",
     name: "Lotus Temple",
     location: "Bahapur, New Delhi",
-    image: "/src/assets/lotusTemple.jpg",
+    image: lotusTempleImg,
     rating: 4.4,
     reviews: 7400,
     description:
